@@ -80,7 +80,7 @@
                 </div>
                 <div class="stat-card-value" style="font-size: 1.5rem;">
                     {% if donor.last_donation_date %}
-                        {{ donor.last_donation_date.strftime('%b %d, %Y') }}
+                        {{ donor.last_donation_date}}
                     {% else %}
                         Never
                     {% endif %}

@@ -771,7 +771,7 @@ def check_donor_eligibility(donor):
         except Exception:
             return {"eligible": True, "message": "Eligible to donate", "days_left": 0}
 
-    days_since = (datetime.now().date() - last_donation).days
+    days_since = (datetime.now().date() - last_donation.date()).days
     min_days = 56  # 8 weeks minimum
 
     if days_since >= min_days:
