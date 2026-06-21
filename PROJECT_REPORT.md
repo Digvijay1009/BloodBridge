@@ -254,10 +254,9 @@ SOURCE database/schema.sql;
 
 ---
 
-**Project By:** [Your Name]
-**Institution:** [Your College/University]
-**Date:** 2024
-**Guided By:** [Professor Name]
+**Project By:** Digvijay Rengade
+**Institution:** [DY Patil Agricultural And Technical University Talsande]
+**Date:** 2026
 
 ---
 
