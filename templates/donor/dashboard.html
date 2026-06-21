@@ -115,13 +115,13 @@
                         <div style="padding: 1rem; border-bottom: 1px solid var(--light-gray); {% if loop.last %}border-bottom: none;{% endif %}">
                             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
                                 <h4 style="font-size: 1rem; color: var(--dark-blue);">{{ drive.title }}</h4>
-                                <span class="badge badge-approved">{{ drive.date.strftime('%b %d') }}</span>
+                                <span class="badge badge-approved">{{ drive.date}}</span>
                             </div>
                             <p style="color: var(--medium-gray); font-size: 0.85rem; margin-bottom: 0.5rem;">
                                 <i class="fas fa-map-marker-alt"></i> {{ drive.location }}, {{ drive.city }}
                             </p>
                             <p style="color: var(--medium-gray); font-size: 0.8rem;">
-                                <i class="fas fa-clock"></i> {{ drive.start_time.strftime('%I:%M %p') }} - {{ drive.end_time.strftime('%I:%M %p') }}
+                                <i class="fas fa-clock"></i> {{ drive.start_time}} - {{ drive.end_time}}
                             </p>
                             <form method="POST" action="{{ url_for('schedule_donation') }}" style="margin-top: 0.75rem;">
                                 <input type="hidden" name="drive_id" value="{{ drive.id }}">
